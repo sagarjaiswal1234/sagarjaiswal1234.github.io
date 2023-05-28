@@ -348,7 +348,7 @@ p {
 
 .careers .cards .card .content {
   height: 400px;
-  overflow: auto;
+  #overflow: auto;
 }
 
 .careers .cards .card .card-text {
@@ -654,4 +654,91 @@ textarea {
   }
 }
 
+
+.card {
+  /* Add shadows to create the "card" effect */
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+}
+
+/* On mouse-over, add a deeper shadow */
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+/* Add some padding inside the card container */
+.container {
+  padding: 2px 16px;
+}
+
+
+.testimony{
+    padding-bottom: 150px;
+    #background-color: #0a0c0f;;
+    overflow: hidden;
+
+}
+.testimony-main{
+    display: flex;
+    flex-wrap: wrap;
+    flex:1 1 ;
+    width:100%;
+    margin: auto;
+    justify-content: space-evenly;
+    margin-top: 50px;
+
+}
+.testimony-image{
+    width:380px;
+    height: 300px;
+    margin-left: 40px;
+
+}
+.testimony-image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+}
+.testimony-text{
+    width: 40%;
+
+}
+.column {
+  float: left;
+  width: 50%;
+  padding: 10px;
+  height: 300px; /* Should be removed. Only for demonstration */
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+.bgimg {
+  display: flex;
+  min-height: 300px;
+  height: 100%;
+  /*background-image: url("https://spaces.w3schools.com/images/KRELIShKxTM.jpg");*/
+  background-image:url("img/mylogo.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  -webkit-box-shadow: inset 0px 0px 300px 0px rgba(255, 255, 255, 0.3);
+  -moz-box-shadow: inset 0px 0px 3000px 2000px rgba(255, 255, 255, 0.3);
+  box-shadow: inset 0px 0px 300px 2000px rgba(255, 255, 255, 0.8);
+}
+
+summary {
+	font-size: var(--font-large);
+    font-weight: bold;
+    margin: -0.5em -0.5em 0;
+    padding: 0.5em;
+	color: var(--title-span-color);
+
+}
 
